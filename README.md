@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Cinewave
+A modern web application for booking movie tickets online. Users can browse movies, select showtimes, reserve seats, and purchase tickets. Built with React and Node.js, featuring real-time seat selection and a mobile-friendly interface.
+>>>>>>> bbc85f54e1f5ec458f3ff122b2371ed6d3358406
