@@ -163,13 +163,15 @@ body {
   height:auto;
 }
 
-.carousel-item {
+.carousel-items {
   flex: 0 0 auto;
+  position: relative;
   width: 250px;
   height: 400px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  background-color: green;
 }
 
 .carousel-item img {

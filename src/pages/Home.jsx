@@ -2,17 +2,18 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-    const carouselRef = useRef(null);
+    const carouselRef1 = useRef(null);
+    const carouselRef2 = useRef(null);
 
-    const scrollLeft = () => {
-        if (carouselRef.current) {
-            carouselRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+    const scrollLeft = (ref) => {
+        if (ref.current) {
+            ref.current.scrollBy({ left: -300, behavior: 'smooth' });
         }
     };
 
-    const scrollRight = () => {
-        if (carouselRef.current) {
-            carouselRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+    const scrollRight = (ref) => {
+        if (ref.current) {
+            ref.current.scrollBy({ left: 300, behavior: 'smooth' });
         }
     };
 
@@ -27,7 +28,7 @@ const Home = () => {
                     </span>
                     <div className="nav_right">
                         <button className="nav_button nav_b1"> Prayagraj </button>
-                       <Link to="/signin"><button className="nav_button nav_b2"> Sign Up </button></Link> 
+                        <Link to="/signin"><button className="nav_button nav_b2"> Sign Up </button></Link>
                     </div>
                 </nav>
                 <div className="hello">
@@ -36,73 +37,75 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* Custom Carousel */}
+            {/* Recommended Movies Carousel */}
             <div className="carousel-wrapper">
                 <h1 className="heading_carousel">Recommended Movies</h1>
-                <button className="scroll-btn left" onClick={scrollLeft}>❮</button>
+                <button className="scroll-btn left" onClick={() => scrollLeft(carouselRef1)}>❮</button>
 
-                <div className="carousel-scroll" ref={carouselRef}>
-                    <div className="carousel-item"><img src="/maa.jpg" alt="maa" /></div>
-                    <div className="carousel-item"><img src="/sitaare-zamin-par.jpg" alt="sitaare" /></div>
-                    <div className="carousel-item"><img src="/jurrasicworld.jpg" alt="jurrasic" /></div>
-                    <div className="carousel-item"><img src="/housefull5.jpg" alt="housefull" /></div>
-                    <div className="carousel-item"><img src="/kannapa.jpg" alt="kannapa" /></div>
-                    <div className="carousel-item"><img src="/themovie.jpg" alt="the movie" /></div>
-                    <div className="carousel-item"><img src="/mertro.jpg" alt="metro" /></div>
+                <div className="carousel-scroll" ref={carouselRef1}>
+                    <div className="carousel-items"><img src="/maa.jpg" alt="maa" /></div>
+                    <div className="carousel-items"><img src="/sitaare-zamin-par.jpg" alt="sitaare" /></div>
+                    <div className="carousel-items"><img src="/jurrasicworld.jpg" alt="jurrasic" /></div>
+                    <div className="carousel-items"><img src="/housefull5.jpg" alt="housefull" /></div>
+                    <div className="carousel-items"><img src="/kannapa.jpg" alt="kannapa" /></div>
+                    <div className="carousel-items"><img src="/themovie.jpg" alt="the movie" /></div>
+                    <div className="carousel-items"><img src="/mertro.jpg" alt="metro" /></div>
                 </div>
 
-                <button className="scroll-btn right" onClick={scrollRight}>❯</button>
+                <button className="scroll-btn right" onClick={() => scrollRight(carouselRef1)}>❯</button>
             </div>
 
-            <div className="beech_ki_photo"><img src="faltu.jpg" alt="" /></div>
+            <div className="beech_ki_photo"><img src="/faltu.jpg" alt="faltu" /></div>
 
+            {/* Premiere Carousel */}
             <div className="carousel-wrapper premiere_carousel">
                 <h1 className="heading_carousel">Premieres</h1>
                 <h4>Brand new releases for you</h4>
-                <button className="scroll-btn left" onClick={scrollLeft}>❮</button>
+                <button className="scroll-btn left" onClick={() => scrollLeft(carouselRef2)}>❮</button>
 
-                <div className="carousel-scroll" ref={carouselRef}>
-                    <div className="carousel-item"><img src="/premiere1.jpg" alt="premiere1" /></div>
-                    <div className="carousel-item"><img src="/premiere2.jpg" alt="premiere2" /></div>
-                    <div className="carousel-item"><img src="/premiere3.jpg" alt="premiere3" /></div>
-                    <div className="carousel-item"><img src="/premiere4.jpg" alt="premiere4" /></div>
-                    <div className="carousel-item"><img src="/premiere5.jpg" alt="premiere5" /></div>
-                    <div className="carousel-item"><img src="/premiere6.jpg" alt="premiere6" /></div>
-                    <div className="carousel-item"><img src="/premiere7.jpg" alt="premiere7" /></div>
+                <div className="carousel-scroll" ref={carouselRef2}>
+                    <div className="carousel-items">
+                        <img src="/premiere1.jpg" alt="premiere1" />
+                    </div>
+                    <div className="carousel-items"><img src="/premiere2.jpg" alt="premiere2" /></div>
+                    <div className="carousel-items"><img src="/premiere3.jpg" alt="premiere3" /></div>
+                    <div className="carousel-items"><img src="/premiere4.jpg" alt="premiere4" /></div>
+                    <div className="carousel-items"><img src="/premiere5.jpg" alt="premiere5" /></div>
+                    <div className="carousel-items"><img src="/premiere6.jpg" alt="premiere6" /></div>
+                    <div className="carousel-items"><img src="/premiere7.jpg" alt="premiere7" /></div>
                 </div>
 
-                <button className="scroll-btn right" onClick={scrollRight}>❯</button>
+                <button className="scroll-btn right" onClick={() => scrollRight(carouselRef2)}>❯</button>
             </div>
-
 
             <div className="separation"></div>
 
             <footer>
-                <div class="questions">
+                <div className="questions">
                     Questions? Call 000-800-919-1694
                 </div>
-                <div class="footer">
-                    <div class="footer-item">
+                <div className="footer">
+                    <div className="footer-item">
                         <a href="faq">Investor Relations</a>
                         <a href="faq">Jobs</a>
                         <a href="faq">Ways to Watch</a>
                         <a href="faq">Terms of Use</a>
                     </div>
 
-                    <div class="footer-item">
+                    <div className="footer-item">
                         <a href="faq">Help Centre</a>
                         <a href="faq">Account</a>
                         <a href="faq">Speed Test</a>
                         <a href="faq">Legal Notices</a>
                     </div>
-                    <div class="footer-item">
+                    <div className="footer-item">
                         <a href="faq">Media Centre</a>
                         <a href="faq">Privacy</a>
                         <a href="faq">Cookie Preferences</a>
                         <a href="faq">Corporate</a>
                     </div>
 
-                    <div class="footer-item">
+                    <div className="footer-item">
                         <a href="faq">Contact Us</a>
                         <a href="faq">Speed Test</a>
                         <a href="faq">Legal Notices</a>
