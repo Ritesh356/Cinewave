@@ -99,6 +99,19 @@ body {
 
 .nav_b2 {
   background-color: rgb(194, 17, 17);
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 20px;
+  width: 100px;
+}
+
+.nav_b2:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.nav_b2 a {
+  text-decoration: none;
 }
 
 .movie-content {
@@ -107,7 +120,9 @@ body {
   flex-wrap: wrap;
 }
 
-.movie-blocks {}
+.movie-blocks {
+
+}
 
 .movie_posters {
   padding: 30px 25px;
@@ -145,6 +160,7 @@ body {
   padding: 0px 30px 20px 30px;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  height:auto;
 }
 
 .carousel-item {
@@ -216,7 +232,7 @@ body {
 
 .separation {
   border: 4px sloid red;
-  widht: 100%;
+  width: 100%;
   height: 4px;
   background-color: rgb(50, 53, 48);
 }
@@ -347,3 +363,110 @@ footer {
 body {
   font-family: "Lato", sans-serif;
 }
+
+.logoimgs {
+  width: 320px;
+  height: 200px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 50px;
+  font-weight: 700;
+  color:red;
+}
+
+.signinbox:hover{
+ box-shadow: 0 4.5px 20px 0 rgb(193, 107, 107);
+}
+
+.signinbox {
+  background-color: black;
+  width: 450px;
+  height: 590px;
+  padding: 10px;
+  box-shadow: 0 4.5px 15px 0 white;
+  z-index:10;
+  opacity:1;
+}
+
+.signinbox >*{
+  padding-bottom:10px;
+}
+.signinpage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:rgba(0, 0, 0, 0.7);
+  background-size: cover; 
+   background-position: center;
+}
+
+
+
+.username {
+  position: relative;
+}
+
+.eyebtn {
+  position: absolute;
+  top: 65%;
+  right: 7%;
+}
+
+.eyebtn svg {
+  font-size: 25px;
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.eyebtn svg:hover {
+  font-size: 25px;
+  color: rgb(0, 0, 0, 0.8);
+}
+.forget a {
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.signinbtn {
+  height: 50px;
+  font-size: 20px;
+}
+
+.loginwgoogle {
+  width: calc(100% - 60px);
+  ;
+  height: 60px;
+  border: 1px solid gray;
+  border-radius: 35px;
+}
+.loginwgoogle:hover{
+ border: 2px solid white;
+}
+
+.google {
+  width: 100px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.google img {
+  width: 44px;
+  height: 45px;
+  border-radius: 50%;
+}
+.toptitle div{font-size: 60px;}
+
+.loginwgoogle {
+  margin: 10px 30px;
+}
+
+.loginwgoogle:hover {
+  zoom: 103%;
+  cursor: pointer;
+  background-color: rgb(17, 17, 17);
+}
+
+
+

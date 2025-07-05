@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     const carouselRef = useRef(null);
@@ -26,7 +27,7 @@ const Home = () => {
                     </span>
                     <div className="nav_right">
                         <button className="nav_button nav_b1"> Prayagraj </button>
-                        <button className="nav_button nav_b2"> Sign Up </button>
+                       <Link to="/signin"><button className="nav_button nav_b2"> Sign Up </button></Link> 
                     </div>
                 </nav>
                 <div className="hello">
