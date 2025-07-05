@@ -2,11 +2,13 @@ import TextField from '@mui/material/TextField';
 import { IoMdEye } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { GiFilmProjector } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 
 export function Signin() {
     return (
         <>
             <section className="signinpage  " style={{ backgroundImage: `url("/background.png")` }} >
+            <Link to="/"><div className='signclose'><IoClose/></div></Link>
                 <div className="logoimgs">
                     CINEWAVE
                 </div>

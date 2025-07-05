@@ -462,11 +462,16 @@ body {
   margin: 10px 30px;
 }
 
+.signclose:active svg{color: gray;}
 .loginwgoogle:hover {
   zoom: 103%;
   cursor: pointer;
   background-color: rgb(17, 17, 17);
 }
+.signclose{position:absolute;top:3%;right:3%;width:60px;height:60px;border-radius:50%;background-color:transparent;display: flex;justify-content: center;align-items: center;}
+.signclose svg{font-size:50px;}
+.signclose:hover{zoom:104%;cursor: pointer;}
+.signclose:active{zoom:97%;cursor: pointer;background-color:rgba(151, 149, 149, 0.122);}
 
 
 
