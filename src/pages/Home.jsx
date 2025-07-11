@@ -17,6 +17,7 @@ const Home = () => {
         }
     };
 
+
     return (
         <>
             <div className="main_class">

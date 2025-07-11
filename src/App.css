@@ -475,5 +475,40 @@ body {
 .signclose:hover{zoom:104%;cursor: pointer;}
 .signclose:active{zoom:97%;cursor: pointer;background-color:rgba(151, 149, 149, 0.122);}
 
+.Movie_details {
+  display: flex;
+  gap: 2vw;
+}
 
+.Filter {
+  color: white;
+}
+
+.Filter_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: yellow;
+  width: 20vw;
+  height: 40vh;
+  gap: 10px;
+  row-gap: 10px;
+  background-color: aliceblue;
+}
+
+.Filter_buttons button {
+  padding: 0px 10px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: blue;
+
+}
+
+.Upcoming_Moives {
+
+}
+
+.Upcoming_Movies img{
+  width: 17vw;
+  height: 55vh;
+}
 
