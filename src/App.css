@@ -9,6 +9,10 @@ body {
   background-color: black;
 }
 
+.index {
+  z-index: 10;
+}
+
 .main_class {
   position: relative;
   background-image: url(background.jpg);
@@ -72,7 +76,6 @@ body {
 
 .search_input {
   position: relative;
-  top: -10px;
   padding: 5px 30px;
   margin-left: 20px;
   margin-top: 0%;
@@ -120,9 +123,7 @@ body {
   flex-wrap: wrap;
 }
 
-.movie-blocks {
-
-}
+.movie-blocks {}
 
 .movie_posters {
   padding: 30px 25px;
@@ -160,7 +161,7 @@ body {
   padding: 0px 30px 20px 30px;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  height:auto;
+  height: auto;
 }
 
 .carousel-items {
@@ -374,11 +375,11 @@ body {
   left: 5%;
   font-size: 50px;
   font-weight: 700;
-  color:red;
+  color: red;
 }
 
-.signinbox:hover{
- box-shadow: 0 4.5px 20px 0 rgb(193, 107, 107);
+.signinbox:hover {
+  box-shadow: 0 4.5px 20px 0 rgb(193, 107, 107);
 }
 
 .signinbox {
@@ -387,21 +388,22 @@ body {
   height: 590px;
   padding: 10px;
   box-shadow: 0 4.5px 15px 0 white;
-  z-index:10;
-  opacity:1;
+  z-index: 10;
+  opacity: 1;
 }
 
-.signinbox >*{
-  padding-bottom:10px;
+.signinbox>* {
+  padding-bottom: 10px;
 }
+
 .signinpage {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:rgba(0, 0, 0, 0.7);
-  background-size: cover; 
-   background-position: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -425,6 +427,7 @@ body {
   font-size: 25px;
   color: rgb(0, 0, 0, 0.8);
 }
+
 .forget a {
   text-decoration: none;
   font-size: 19px;
@@ -442,8 +445,9 @@ body {
   border: 1px solid gray;
   border-radius: 35px;
 }
-.loginwgoogle:hover{
- border: 2px solid white;
+
+.loginwgoogle:hover {
+  border: 2px solid white;
 }
 
 .google {
@@ -458,57 +462,595 @@ body {
   height: 45px;
   border-radius: 50%;
 }
-.toptitle div{font-size: 60px;}
+
+.toptitle div {
+  font-size: 60px;
+}
 
 .loginwgoogle {
   margin: 10px 30px;
 }
 
-.signclose:active svg{color: gray;}
+.signclose:active svg {
+  color: gray;
+}
+
 .loginwgoogle:hover {
   zoom: 103%;
   cursor: pointer;
   background-color: rgb(17, 17, 17);
 }
-.signclose{position:absolute;top:3%;right:3%;width:60px;height:60px;border-radius:50%;background-color:transparent;display: flex;justify-content: center;align-items: center;}
-.signclose svg{font-size:50px;}
-.signclose:hover{zoom:104%;cursor: pointer;}
-.signclose:active{zoom:97%;cursor: pointer;background-color:rgba(151, 149, 149, 0.122);}
 
-.Movie_details {
+.signclose {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
   display: flex;
-  gap: 2vw;
+  justify-content: center;
+  align-items: center;
 }
 
-.Filter {
+.signclose svg {
+  font-size: 50px;
+}
+
+.signclose:hover {
+  zoom: 104%;
+  cursor: pointer;
+}
+
+.signclose:active {
+  zoom: 97%;
+  cursor: pointer;
+  background-color: rgba(151, 149, 149, 0.122);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "Be Vietnam Pro";
+  line-height: normal;
+}
+
+.booking-wrapper {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  font-family: "Be Vietnam Pro";
+  color: white;
+  opacity: 0.9;
+}
+
+.booking-nav {
+  padding: 10px 0;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-nav-left {
+  display: flex;
+}
+
+.booking-logoimgs {
+  width: 300px;
+  font-size: 50px;
+  font-weight: 700;
+  color: red;
+}
+
+.booking-nav-search {
+  display: flex;
+  align-items: center;
+}
+
+.booking-nav-search input {
+  line-height: normal;
+  font-size: 13px;
+  background: transparent;
+  border: 1px solid #abadb3;
+  border-radius: 8px;
+  padding: 10px 5rem 10px 10px;
   color: white;
 }
 
-.Filter_buttons {
+.booking-nav-search input::placeholder {
+  color: rgb(255, 255, 255, 0.95);
+  font-size: 16px;
+}
+
+.booking-nav-right {
   display: flex;
-  flex-wrap: wrap;
-  background-color: yellow;
-  width: 20vw;
-  height: 40vh;
+  gap: 12px;
+}
+
+.booking-nav-Location {
+  background: transparent;
+  color: white;
+  border: 1px solid #abadb3;
+  border-radius: 8px;
+  padding: 10px 15px 10px 5px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.booking-nav-SignBtn {
+  background-color: rgb(194, 17, 17);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.booking-section1 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 25px auto 0;
+  padding: 8px 16px 16px;
+}
+
+.booking-movie {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+
+.booking-movie-left img {
+  width: 120px;
+  height: 158px;
+  border-radius: 12px;
+}
+
+.booking-movie-right {
+  place-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.booking-movie-right h1 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.booking-movie-desc {
+  display: flex;
+  color: rgb(119, 119, 126);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.booking-movie-desc div {
+  color: rgb(119, 119, 126);
+}
+
+.booking-movie-details-btn {
+  margin-top: 5px;
+  font-size: 13px;
+  line-height: normal;
+}
+
+.booking-movie-details-btn button {
+  background-color: transparent;
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: 1px solid #333530;
+  color: white;
+  cursor: pointer;
+}
+
+.booking-dates-outer {
+  width: 100%;
+  border-top: 1px solid #abadb3;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 1000;
+}
+
+.booking-dates-inner {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking-dates-list ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
   gap: 10px;
-  row-gap: 10px;
-  background-color: aliceblue;
 }
 
-.Filter_buttons button {
-  padding: 0px 10px;
-  height: 25px;
+.booking-dates-listItem {
+  position: relative;
+}
+
+.radioBtn {
+  appearance: none;
+  display: none;
+}
+
+.radioBtn-label {
+  display: inline-block;
+  position: relative;
+  margin-top: 7px;
+  width: 60px;
+  height: 70px;
+  border-radius: 12px;
+  border-right: 1px solid #abadb3
+}
+
+.booking-datesDetails {
+  position: absolute;
+  z-index: 10;
+  width: 60px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.radioBtn-label::before {
+  z-index: 5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  background-color: rgb(235, 78, 98);
+  opacity: 0;
+}
+
+.radioBtn:checked+.radioBtn-label::before {
+  opacity: 1;
+  transition: 0.6s;
+}
+
+.booking-filters-list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+.booking-filters-listItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #abadb3;
+  border-left: 1px solid #abadb3;
+  gap: 5px;
+  padding: 0 10px;
+  transition: 0.6s;
+}
+
+.booking-filters-listItem:hover {
+  border-bottom: 5px solid rgb(235, 78, 98);
+}
+
+.booking-dropdownIcon img {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.booking-shadow {
+  width: 100%;
+  height: 3px;
+  box-shadow: #abadb3 0px 5px 15px;
+}
+
+.booking-cinemas {
+  max-width: 1200px;
+  width: 90%;
+  margin: 1.5rem auto;
+}
+
+.booking-cinemas>ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.booking-cinemas-list {
+  padding: 24px 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-cinemas-detail {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.booking-cinemas-detail-left img {
+  width: 56px;
+  height: 56px;
+  border-radius: 93px;
+  border: 1px solid #abadb3;
+}
+
+.booking-cinemas-detail-right {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.booking-cinema-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+}
+
+.booking-cinema-otherDetails {
+  display: flex;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #abadb3;
+}
+
+.booking-cinema-otherDetails div {
+  color: #abadb3;
+}
+
+.booking-cinema-distance {
+  padding-right: 7.5px;
+  border-right: 1px solid #abadb3;
+}
+
+.booking-cinema-status {
+  padding-left: 7.5px;
+}
+
+.booking-shows ul {
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.show-timing-btn {
+  position: relative;
+  background: transparent;
+  color: white;
+  border: 1px solid #abadb3;
+  border-radius: 12px;
+  height: 52px;
+  line-height: 20px;
+  padding: 0 4rem;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.Booking-link {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 5px;
+}
+
+.Booking-link div {
+  color: #abadb3;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.Booking-link a {
+  text-decoration: none;
+}
+
+
+/*Moviedetails css start from here*/
+
+.moviedetails {}
+
+.navigationbar2 {
+  display: flex;
+  margin-top: -20px;
+  justify-content: space-between;
+}
+
+.leftnav ul {
+  display: flex;
+  list-style: none;
+  padding: 0px 18px;
+  gap: 7%;
+}
+
+.rightnav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 33vw;
+}
+
+.box1 {
+  position: absolute;
+  top: 106px;
+  left: 0;
+  height: 70%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.poster {
+  background-image: url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/maa-et00437726-1750928782.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-position: 10px;
+  width: 98.9vw;
+  height: 70vh;
+}
+
+.movieinfo img {
+  position: relative;
+  margin: 25px 40px;
+  width: 16vw;
+}
+
+.movieinfo ul {
+  list-style: none;
+  display: flex;
+}
+
+.right-li-info {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info-buttons {
+  display: flex;
+  gap: 0.5vw;
+}
+
+.info-buttons button {
+  background-color: rgb(229 229 229);
+  color: black;
+  padding: 1px 4px;
   border-radius: 5px;
-  background-color: blue;
+}
+
+.bookingbutton button {
+  background-color: rgb(248 68 100);
+  width: 15vw;
+  height: 10vh;
+  border-radius: 10px;
+}
+
+.time-and-type {
+  display: flex;
+  gap: 1vw;
+}
+
+.extra-info {
+  margin: 2%;
+}
+
+.cast {
+  margin-left: 2%;
+  margin-top: 4%;
+}
+
+.castimages img {
+  margin: 0px 1vw;
+  width: 8vw;
+  border-radius: 50%;
+}
+
+.crew {
+  margin-left: 2%;
+  margin-top: 4%;
+}
+
+.crewimages img {
+  margin: 0px 1vw;
+  width: 8vw;
+  border-radius: 50%;
+}
+
+.heading-carousel-moviedetails {
+  position: relative;
+  margin: 40px 0px 10px 30px;
+}
+
+.carousel-wrapper-moviedetails {
+  position: relative;
+  width: 96.5vw;
+  max-width: 110vw;
+  margin: 0px 0px 30px 0px;
+  overflow: hidden;
+}
+
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+
+footer .questions {
+  padding: 34px 0;
+}
+
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+@media screen and (max-width: 1300px) {
+
+  footer {
+    max-width: 90vw;
+    padding: 75px 0;
+  }
+
+  .footer-item {
+    align-items: center;
+  }
+
 
 }
 
-.Upcoming_Moives {
+@media screen and (max-width: 1300px) {
 
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
 }
 
-.Upcoming_Movies img{
-  width: 17vw;
-  height: 55vh;
+
+.footer a {
+  font-size: 14px;
+  color: white;
 }
 
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
