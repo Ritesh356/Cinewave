@@ -4,6 +4,7 @@ import { Signin } from "./pages/Signin.jsx";
 import './App.css';
 
 import Moviedetails from "./pages/Moviedetails.jsx";
+import Seating from "./pages/Seating.jsx";
 
 import Cinemas from "./pages/Booking.jsx";
 
@@ -16,6 +17,7 @@ function App() {
 
         <Route path="/moviedetails" element={<Moviedetails />} />
         <Route path="/Booking" element={<Cinemas />} />
+        <Route path="/Seating" element={<Seating />} />
       </Routes>
     </BrowserRouter>
   );
