@@ -4,7 +4,7 @@ const Seating = () => {
     const date = '7 jul';
     const showTime = '10:20AM';
     const cinema = 'PVR Gaur City,Greater Noida';
-    const cols=20;
+    const cols=50;
     const rows=13;
     return (
         <div className="seating-wrapper">
@@ -48,7 +48,7 @@ const Seating = () => {
                                             </div>
                                         )
                                     }
-                                    else if(j==10){
+                                    else if(j==(cols/2)){
                                         seats.push(
                                             <div
                                                 key={`seat-${i+1}-${j+1}`}

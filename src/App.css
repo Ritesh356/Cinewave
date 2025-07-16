@@ -1154,7 +1154,8 @@ footer .questions {
   cursor: pointer;
 }
 .seating-layout{
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: scroll;
   width: 1080px;
   height: 530px;
   padding-top: 45px;
@@ -1172,6 +1173,7 @@ footer .questions {
   border: 1px solid #8b8b93;
   border-radius: 5px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 .seatRows{
   display: flex;
@@ -1180,13 +1182,15 @@ footer .questions {
 }
 .row-label{
   width: 80px;
+  flex-shrink: 0;
 }
 .seat-middle{
-  margin-right: 65px;
+  margin-right: 6.8rem;
 }
 .screen-img{
+  width: 100%;
   margin: 2.5rem auto 6rem;
-  padding-left: 3rem;
+  padding-left: 19.5rem;
 }
 .screen-img img{
   width: 500px;
